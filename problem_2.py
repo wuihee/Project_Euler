@@ -1,12 +1,17 @@
 # Even fibonacci numbers
 
 
-def fibonacci_seq():
-    seq = [1, 2]
-    while seq[1] <= 100:
-        seq.append(seq[-2] + seq[-1])
+def fibonacci_seq(limit):
+    total = 0
+    curr_term = 1
+    prev_term = 1
 
-    return seq
+    while curr_term < limit:
+        if curr_term % 2 == 0:
+            total += curr_term
+        prev_term, curr_term = curr_term, curr_term + prev_term
+
+    return total
 
 
-print(fibonacci_seq())
+print(fibonacci_seq(4000000))
