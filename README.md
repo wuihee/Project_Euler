@@ -1,4 +1,2 @@
 # Project Euler
-https://projecteuler.net/archives
-
-All solutions original.
+This repository contains my original Project Euler solutions. Intended to provide different solutions to compare to.
