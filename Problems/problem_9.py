@@ -2,6 +2,7 @@
 
 
 def is_pythagorean(a, b, c):
+    """Check if 'a', 'b', and 'c' are pythagorean"""
     if a ** 2 + b ** 2 == c ** 2:
         return True
     else:
