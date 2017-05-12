@@ -10,7 +10,7 @@ def is_palindrome(num):
 palindromes = []
 
 for i in range(999, 0, -1):
-    for j in range(999, 0, -1):
+    for j in range(i, 0, -1):
         check = i * j
         if is_palindrome(check):
             palindromes.append(check)
